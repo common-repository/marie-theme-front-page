@@ -1,0 +1,68 @@
+.marie-about-section {
+	position: relative;
+	display: grid;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	.marie-about-items {
+		display: grid;
+		grid-auto-flow: row;
+		row-gap: 3rem;
+		.marie-about-item-wrap {
+			display: grid; // prevents el margin collapse.
+			grid-auto-flow: column;
+			column-gap: 3rem;
+			align-items: flex-start;
+
+			.marie-about-item-text {
+				display: grid;
+				grid-auto-flow: row;
+				align-items: center;
+				justify-content: flex-start;
+				justify-items: flex-start;
+				max-width: 60rem;
+				h3 {
+					// Align with top of image.
+					margin-top: -1rem;
+				}
+			}
+			img {
+				width: auto;
+				height: 15rem;
+				object-fit: cover;
+			}
+		}
+		.marie-about-item-wrap-one {
+			// img height = 15rem, aspect ratio 3:2 => 22.5rem.
+			grid-template-columns: 22.5rem 1fr;
+		}
+
+		// if no image selected.
+		.marie-about-item-wrap-one.without-img {
+			grid-template-columns: 1fr;
+		}
+		.marie-about-item-wrap-two {
+			grid-template-columns: 1fr 22.5rem; // img height = 15rem, aspect ratio 3:2 => 22.5rem.
+		}
+		@media only screen and (max-width: 768px) {
+			.marie-about-item-wrap {
+				grid-auto-flow: row;
+				grid-template-columns: 1fr;
+				.marie-about-item-text {
+					margin-top: 1.5rem;
+					h3 {
+						margin: 1.5rem 0 calc(1.5rem - 6px) 0;
+					}
+				}
+				img {
+					grid-row: 1;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		.marie-about-items {
+			row-gap: 1.5rem;
+		}
+	}
+}

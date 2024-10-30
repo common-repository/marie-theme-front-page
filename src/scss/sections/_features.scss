@@ -1,0 +1,64 @@
+.marie-features-section {
+	display: grid;
+	column-gap: 3rem;
+	row-gap: 4.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+	// z index is important because if not set the box shadows on .what-img-wrap::before are lost below it.
+	z-index: 0;
+	position: relative;
+
+	.marie-feature {
+		display: grid;
+		justify-content: flex-start;
+		justify-items: flex-start;
+		align-content: baseline;
+		align-items: baseline;
+		position: relative;
+		padding: 6rem 1.5rem 1.5rem 1.5rem;
+		background: $dark-white;
+		box-shadow: $box-shadow-regular;
+		border-radius: $marie-border-radius;
+
+		.marie-feature-title {
+			min-height: 1.5rem;
+		}
+
+		.what-img-wrap {
+			display: grid;
+			position: absolute;
+			top: -1.5rem;
+			left: 0;
+			width: 7.5rem;
+			height: 7.5rem;
+			align-items: center;
+			justify-content: center;
+			background: $dark-white;
+			border-radius: $marie-border-radius;
+			padding: 1.5rem;
+			box-sizing: border-box;
+		}
+		.what-img-wrap::before {
+			background: $dark-white;
+			content: '';
+			position: absolute;
+			width: 7.5rem;
+			height: 7.5rem;
+			border-radius: 2px;
+			z-index: -1;
+		}
+
+		.marie-feature-text {
+			display: grid;
+			grid-gap: 1.5rem;
+			justify-content: flex-start;
+			justify-items: flex-start;
+		}
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	.marie-features-section {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}

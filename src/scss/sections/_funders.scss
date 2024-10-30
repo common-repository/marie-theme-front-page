@@ -1,0 +1,17 @@
+.funders-section {
+	display: grid;
+	padding: 3rem 0rem;
+	align-items: center;
+
+	.funders-wrap {
+		grid-gap: 1rem;
+		margin: 1rem 0 2rem 0;
+		display: grid;
+		justify-items: center;
+		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+	}
+	.funders-wrap img {
+		height: 6rem;
+		object-fit: contain;
+	}
+}

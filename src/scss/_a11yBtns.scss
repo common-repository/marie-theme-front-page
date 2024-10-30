@@ -1,0 +1,109 @@
+/*----------------------------------------------------------------------------
+Contrast
+----------------------------------------------------------------------------*/
+
+body.marie-high-contrast {
+	background: black;
+	.marie-card {
+		border: 1px solid white;
+	}
+	a:hover {
+		color: $blue !important;
+		text-decoration: none !important;
+	}
+
+	*:not(button):not(button
+			*):not(input):not(img):not(.wp-block-cover):not(.heroine-image) {
+		background: black !important;
+		box-shadow: none !important;
+		filter: none !important;
+	}
+	*:focus {
+		outline-color: white !important;
+	}
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	span,
+	mark,
+	dl,
+	dd,
+	li,
+	td,
+	th,
+	caption,
+	figcaption,
+	pre,
+	code,
+	strong,
+	small,
+	cite,
+	address {
+		color: white !important;
+	}
+	a {
+		color: $blue !important;
+		text-decoration: underline !important;
+	}
+	input,
+	select,
+	textarea {
+		border-color: white !important;
+		outline-color: white !important;
+		color: white !important;
+	}
+	a {
+		span {
+			color: $blue !important;
+		}
+	}
+
+	svg[aria-hidden='true']:not(button svg) {
+		display: none !important;
+	}
+	svg {
+		fill: $blue !important;
+	}
+	button {
+		color: black !important;
+		background: white !important;
+	}
+	button {
+		span {
+			color: black !important;
+		}
+	}
+	.marie-gigantic-menu {
+		#marie-main-nav.show {
+			border: 1px solid white !important;
+		}
+	}
+
+	.custom-logo-link {
+		img {
+			background: white !important;
+		}
+	}
+	img {
+		background: white !important;
+	}
+	.marie-fp-section::before,
+	.marie-page-header::after {
+		background-image: none !important;
+	}
+	.marie-fp-section {
+		border-top: 1px solid white;
+	}
+	.marie-page-header {
+		border-bottom: 1px solid white;
+	}
+
+	.what-img-wrap {
+		border-top: 1px solid white;
+		border-left: 1px solid white;
+	}
+}

@@ -1,0 +1,85 @@
+/*===============================================================
+Colors
+
+Note:
+
+$color-50 is $color on white background with .5 opacity.
+$color-75 is $color on white background with .75 opacity.
+===============================================================*/
+
+// White
+$white: #ffffff;
+$dark-white: #f7f7f7;
+
+// Black
+$black: #444242;
+$black-75: #727171;
+$dark-black: #252323;
+$darker-black: #2d2929;
+$darkest-black: #100f0f;
+$light-black: #5f5a5a;
+$lighter-black: #b5b3b3;
+$lightest-black: #dddcdc;
+
+// Green
+$greeny: #04d89d;
+$greeny-50: #81ebce;
+$greeny-75: #43e2b6;
+
+// Yellow
+$yellow: #fdc800;
+$yellow-50: #fee37f;
+$yellow-75: #fed640;
+
+// Red
+$red: #c21f63; // ok for bg with white text.
+$red-50: #e08fb1;
+$red-75: #d1578a;
+
+// Blue
+$teal: #10596d;
+$teal-50: #87acb6;
+$teal-75: #4c8392;
+
+$blue: #07abe6;
+$blue-50: #83d5f2;
+$blue-75: #45c0ec;
+
+/*===============================================================
+Box Shadows
+===============================================================*/
+
+$box-shadow-regular: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+	0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+$box-shadow-small: 0 1px 1px 0 rgba(68, 66, 66, 0.14),
+	0 2px 1px -2px rgba(68, 66, 66, 0.12), 0 1px 5px 0 rgba(68, 66, 66, 0.2);
+$box-shadow-more: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+	0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+
+$marie-vertical-space: 1.5rem; // 24px @ 1rem = 16px.
+
+/*===============================================================
+Font Sizes
+===============================================================*/
+$baseFontSize: 1rem;
+$smallFontSize: 0.8rem;
+$heading-jumbo: 4.768rem;
+$heading-giant: 3.815rem;
+$heading-bigger: 3.052rem;
+$heading-big: 2.441rem;
+$heading-1: 1.953rem;
+$heading-2: 1.563rem;
+$heading-3: 1.25rem;
+$heading-4: $baseFontSize;
+$heading-5: $smallFontSize;
+$heading-6: $smallFontSize;
+
+/*===============================================================
+Other
+===============================================================*/
+$marie-border-radius: 0.2rem;
+
+@import 'sections/about';
+@import 'sections/features';
+@import 'sections/funders';
+@import 'a11yBtns';
